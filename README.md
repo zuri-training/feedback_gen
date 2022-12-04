@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 # feedback_gen
 Feedback Generator application created by Team Rhinocerousw2 as part of the Zuri Training Project Phase
 
@@ -14,8 +20,13 @@ Users will be able to:
 - Select from feedback form template 
 - Save data and come back to download 
 
-## Implementation
-Frontend implementation will be in HTML/CSS/Javascript 
-Backend implementation will be in Python(Django)
+## Stack
+**Client:** Javascript, HTML, CSS languages
 
+**Server:** Python language, Django framework, SQL database
 
+## Our Team
+
+<img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/ms5faj5pae6nd03wazk1.png" width="200" height="50">
+
+We are students of [IngressiveForGood+ZuriTraining](https://training.zuri.team) 2022 cohort. We, as memebers of Team Rhinocerousw2, made up of a diverse mix of designers and developers have built an web application that allows the user to create and deploy custom made feedback forms. We hope you find this repo useful. 
