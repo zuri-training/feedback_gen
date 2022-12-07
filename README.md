@@ -29,49 +29,17 @@ Users will be able to:
 ```
 feedback_gen
 ├─ .git
-│  ├─ config
-│  ├─ description
-│  ├─ HEAD
-│  ├─ hooks
-│  │  ├─ applypatch-msg.sample
-│  │  ├─ commit-msg.sample
-│  │  ├─ fsmonitor-watchman.sample
-│  │  ├─ post-update.sample
-│  │  ├─ pre-applypatch.sample
-│  │  ├─ pre-commit.sample
-│  │  ├─ pre-merge-commit.sample
-│  │  ├─ pre-push.sample
-│  │  ├─ pre-rebase.sample
-│  │  ├─ pre-receive.sample
-│  │  ├─ prepare-commit-msg.sample
-│  │  ├─ push-to-checkout.sample
-│  │  └─ update.sample
-│  ├─ index
-│  ├─ info
-│  │  └─ exclude
-│  ├─ logs
-│  │  ├─ HEAD
-│  │  └─ refs
-│  │     ├─ heads
-│  │     │  └─ main
-│  │     └─ remotes
-│  │        └─ origin
-│  │           └─ HEAD
-│  ├─ objects
-│  │  ├─ info
-│  │  └─ pack
-│  │     ├─ pack-453ceb143fd8e21b5758d4fa52824e2b8ebc6983.idx
-│  │     └─ pack-453ceb143fd8e21b5758d4fa52824e2b8ebc6983.pack
-│  ├─ packed-refs
-│  └─ refs
-│     ├─ heads
-│     │  └─ main
-│     ├─ remotes
-│     │  └─ origin
-│     │     └─ HEAD
-│     └─ tags
 ├─ .gitignore
 ├─ apps
+│  └─ core
+│     ├─ admin.py
+│     ├─ apps.py
+│     ├─ migrations
+│     │  └─ __init__.py
+│     ├─ models.py
+│     ├─ tests.py
+│     ├─ views.py
+│     └─ __init__.py
 ├─ feedbackgen
 │  ├─ feedbackgen
 │  │  ├─ asgi.py
@@ -82,7 +50,6 @@ feedback_gen
 │  └─ manage.py
 ├─ LICENSE
 ├─ media
-├─ project_structure.txt
 ├─ README.md
 ├─ requirements.txt
 ├─ static
@@ -96,3 +63,5 @@ feedback_gen
 <img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/ms5faj5pae6nd03wazk1.png" width="200" height="50">
 
 We are students of [IngressiveForGood+ZuriTraining](https://training.zuri.team) 2022 cohort. We, as memebers of Team Rhinocerousw2, made up of a diverse mix of designers and developers have built an web application that allows the user to create and deploy custom made feedback forms. We hope you find this repo useful. 
+
+
