@@ -26,6 +26,7 @@ Users will be able to:
 **Server:** Python language, Django framework, SQL database
 
 ## Project Structure
+The base project files built around the core files of the Django backend. Application files are store under \apps, Html files are stored in \template, css an js files in \static, and media files in \media. 
 ```
 feedback_gen
 ├─ .git
