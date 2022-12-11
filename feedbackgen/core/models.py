@@ -6,7 +6,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=100)
     email = models.EmailField(max_length=254)
     #not sure if this isn't covered by authentication
-    # password = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
 
     def __str__(self):
         return self.first_name
