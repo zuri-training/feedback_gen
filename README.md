@@ -31,30 +31,34 @@ The base project files built around the core files of the Django backend. Applic
 feedback_gen
 ├─ .git
 ├─ .gitignore
-├─ apps
-│  └─ core
-│     ├─ admin.py
-│     ├─ apps.py
-│     ├─ migrations
-│     │  └─ __init__.py
-│     ├─ models.py
-│     ├─ tests.py
-│     ├─ views.py
-│     └─ __init__.py
 ├─ feedbackgen
+│  ├─ core
+│  │  ├─ admin.py
+│  │  ├─ apps.py
+│  │  ├─ migrations
+│  │  │  ├─ 0001_initial.py
+│  │  │  └─ __init__.py
+│  │  ├─ models.py
+│  │  ├─ tests.py
+│  │  ├─ views.py
+│  │  └─ __init__.py
 │  ├─ feedbackgen
 │  │  ├─ asgi.py
 │  │  ├─ settings.py
 │  │  ├─ urls.py
 │  │  ├─ wsgi.py
 │  │  └─ __init__.py
-│  └─ manage.py
+│  ├─ manage.py
+│  ├─ media
+│  │  └─ download.png
+│  ├─ static
+│  │  ├─ index.js
+│  │  └─ styles.css
+│  └─ templates
+│     └─ index.htm
 ├─ LICENSE
-├─ media
 ├─ README.md
-├─ requirements.txt
-├─ static
-└─ templates
+└─ requirements.txt
 
 ```
 ## License
@@ -64,5 +68,4 @@ feedback_gen
 <img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/ms5faj5pae6nd03wazk1.png" width="200" height="50">
 
 We are students of [IngressiveForGood+ZuriTraining](https://training.zuri.team) 2022 cohort. We, as memebers of Team Rhinocerousw2, made up of a diverse mix of designers and developers have built an web application that allows the user to create and deploy custom made feedback forms. We hope you find this repo useful. 
-
 
