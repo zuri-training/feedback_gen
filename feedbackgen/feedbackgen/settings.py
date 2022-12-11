@@ -59,6 +59,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'feedbackgen.urls'
+LOGIN_URL = '/login/'
 
 TEMPLATES = [
     {
