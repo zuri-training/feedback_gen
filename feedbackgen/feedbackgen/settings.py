@@ -45,7 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+<<<<<<< HEAD
     'core'
+=======
+    'core',
+>>>>>>> a8d1b4ce83ee5fc2c6e726ce228c61dd0ea9c19e
 ]
 
 MIDDLEWARE = [
@@ -64,7 +68,7 @@ LOGIN_URL = '/login/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join (BASE_DIR, 'templates/'),],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

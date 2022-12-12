@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./static/styles.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>ContactUS</title>
+</head>
+<body>
+    <header>
+        <div class="arrow">&#8592</div>
+        <h2>New Contact Us Form</h2>
+        <button>Publish</button>
+
+    </header>
+
+    <div class="navbar">
+        <a href="">Forms</a>
+        <a href="">Style & preview</a>
+        <a href="">Embed</a>
+        <a >Actions</a>
+    </div>
+
+    <main>
+        <div class="col1">
+            <h2>Add From Field</h2>
+            <input type="text" placeholder="  &#xF002;       Search" style="font-family:Arial, FontAwesome" />
+            <h2>Contact Properties</h2>
+            <p>Frequently Used Fields</p>
+            <p class="instruction" style="font-weight: 400;font-size: 15px;line-height: 18px;">Select Field to add to Your Form</p>
+            <div class="filds1">
+                <div>
+                    <button id="Fname_Button" onclick="ShowInput('Fname','Fname_Button')" draggable="true">First Name</button>
+                    <button id="email_Button" onclick="ShowInput('email','email_Button')">Email</button>
+                    <button id="street_Button" onclick="ShowInput('street','street_Button')">Street Adress</button>
+                    <button id="state_Button" onclick="ShowInput('state','state_Button')">State/Region</button>
+                    <button id="mobile_Button" onclick="ShowInput('mobile','mobile_Button')">Mobile Number</button>
+                    <button id="occupatio_Button" onclick="ShowInput('occupation','occupatio_Button')">Occupation</button>
+                </div>
+                <div>
+                    <button id="Lname_Button" onclick="ShowInput('Lname','Lname_Button')">Last Name</button>
+                    <button id="phone_Button"  onclick="ShowInput('phone','phone_Button')" >Phone Number</button>
+                    <button id="city_Button" onclick="ShowInput('city','city_Button')">City</button>
+                    <button id="country_Button"  onclick="ShowInput('country','country_Button')">Country</button>
+                    <button id="religion_Button" onclick="ShowInput('religion','religion_Button')">Religion</button>
+                    <button id="message_Button" onclick="ShowInput('message','message_Button')">Message</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col2">
+            <form>
+                <div id="Fname" style="display: none;" >
+                    <div class="label"><label>First Name:</label></div>
+                    <input type="text" name="Fname" placeholder="First Name">
+                </div>
+                <div div id="Lname" style="display: none;">
+                    <div class="label"><label>Last Name:</label></div>
+                    <input type="text" name="Lname" placeholder="Last Name">
+                </div>
+                <div div id="street" style="display: none;">
+                    <div class="label"><label>Street Address:</label></div>
+                    <input type="text" name="street" placeholder="Street Address">
+                </div>
+
+                <div div id="state" style="display: none;">
+                    <div class="label"><label>State/Region:</label></div>
+                    <input type="text" name="state" placeholder="State/Region">
+                </div>
+
+                <div div id="mobile" style="display: none;">
+                    <div class="label"><label>Mobile Number:</label></div>
+                    <input type="number" name="mobile" placeholder="Mobile Number">
+                </div>
+
+                <div div id="email" style="display: none;">
+                    <div class="label"><label>Email:</label></div>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+
+                <div div id="phone" style="display: none;">
+                    <div class="label"><label>Phone Number:</label></div>
+                    <input type="number" name="phone" placeholder="Phone Number">
+                </div>
+
+                <div div id="occupation" style="display: none;">
+                    <div class="label"><label>Occupation:</label></div>
+                    <input type="text" name="occupation" placeholder="Occupation">
+                </div>
+
+                <div div id="city" style="display: none;">
+                    <div class="label"><label>City:</label></div>
+                    <input type="text" name="city" placeholder="City">
+                </div>
+
+                <div div id="country" style="display: none;">
+                    <div class="label"><label>Country:</label></div>
+                    <input type="text" name="country" placeholder="Country">
+                </div>
+
+                <div div id="religion" style="display: none;">
+                    <div class="label"><label>Religion:</label></div>
+                    <input type="text" name="religion" placeholder="Religion">
+                </div>
+
+                <div div id="message" style="display: none;">
+                    <div class="label"><label>Message:</label></div>
+                    <textarea placeholder="Message" name="message"></textarea>
+                </div>
+
+               
+                    <button class="subButton" submit>Submit</button>
+                
+            </form>
+
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        
+        function ShowInput(a,b){
+        var UserInput=document.getElementById(a)
+        var buttonClicked=document.getElementById(b)
+        var DisplaySetting=UserInput.style.display;
+        
+
+
+        if(DisplaySetting=='none'){
+            //input not visible show it
+            UserInput.style.display='block';
+            buttonClicked.style.backgroundColor='#ADD8E6';
+            
+        }else{
+            UserInput.style.display='none';
+            buttonClicked.style.backgroundColor='#ffffff';
+        }
+        }
+        
+
+    </script>
+    
+</body>
+</html>
