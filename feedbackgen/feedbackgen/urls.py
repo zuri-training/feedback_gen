@@ -26,6 +26,6 @@ urlpatterns = [
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dashboard/', include('core.urls')),
+    path('feedback/', include('core.urls')),
 ]
 >>>>>>> a8d1b4ce83ee5fc2c6e726ce228c61dd0ea9c19e

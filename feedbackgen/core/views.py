@@ -58,4 +58,11 @@ def feedback_form(request):
         form = FeedbackForm()
     return render(request, 'templates/feedback.html', {'form': form})
 
-    
+def faq(request):
+    return render(request, "faq.html")
+
+def pricing(request):
+    return render(request, "pricing.html")
+
+def index(request):
+    return render(request, "index.html")
