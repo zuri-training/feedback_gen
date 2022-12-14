@@ -10,5 +10,6 @@ urlpatterns = [
     #path('feedback', views.feedback, name='feedback'),
     path('signup/', views.signup_view, name='signup'),
     path('faq/', views.faq, name='faq'),
-    path('pricing/', views.pricing, name='pricing')
+    path('pricing/', views.pricing, name='pricing'), 
+    path('dashboard_view/', views.dashboard_view, name='dashboard_view'),
 ]

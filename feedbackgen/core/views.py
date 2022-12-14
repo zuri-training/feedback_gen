@@ -4,7 +4,8 @@ from .forms import FeedbackForm
 from django.contrib import messages
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
-
+from django.http import HttpResponse
+from django.template.loader import render_to_string
 
 
 # Create your views here.
@@ -37,7 +38,7 @@ def login_view(request):
             return render(request, 'templates/login.html', context)
         login(request,user)
         return redirect('/')
-    return render(request, 'templates/login.html', {})
+    return render(request, 'templates/signin.html', {})
 
 
 def logout_view(request):
@@ -71,3 +72,8 @@ def pricing(request):
 
 def index(request):
     return render(request, "index.html")
+
+@login_required
+def dashboard_view(request):
+    content = render_to_string('createform.html', context=None)
+    return HttpResponse(content)
