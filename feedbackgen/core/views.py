@@ -19,7 +19,7 @@ def feedback_form(request):
             return render(request, 'templates/feedback.html', {'form':form, 'note':note})
     else:
         form = FeedbackForm()
-    return render(request, 'templates/feedback.html', {'form': form})
+    return render(request, 'core/createform.html', {'form': form})
 
 
 
@@ -34,17 +34,17 @@ def login_view(request):
 
         if user is None:
             context = {"error": "Invalid email or password"}
-            return render(request, 'templates/login.html', context)
+            return render(request, 'core/login.html', context)
         login(request,user)
         return redirect('/')
-    return render(request, 'templates/login.html', {})
+    return render(request, 'core/login.html', {})
 
 
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
         return redirect('/')
-    return render(request, 'templates/logout.html', {})
+    return render(request, 'core/logout.html', {})
 
 
 def signup_view(request):
@@ -60,14 +60,14 @@ def signup_view(request):
             return redirect('/')
     else:
         form = UserCreationForm()
-    return render(request, 'templates/signup.html', {'form':form})
+    return render(request, 'core/signup.html', {'form':form})
 
 
 def faq(request):
-    return render(request, "faq.html")
+    return render(request, "core/faq.html")
 
 def pricing(request):
-    return render(request, "pricing.html")
+    return render(request, "core/pricing.html")
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "core/index.html")
