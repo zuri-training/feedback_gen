@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
     <!-- Using fonts awesome -->
     <script src="https://kit.fontawesome.com/098387041e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/pricing.css">
+    <link rel="stylesheet" href="{% static 'core/pricing.css' %}">
 
     <title>Pricing Page</title>
 </head>
@@ -18,7 +19,7 @@
 <body>
     <header>
 <!-- THE NAVIGATION -->
-        <img class="logo" src="images/logo.svg" alt="logo">
+        <img class="logo" src="{% static 'core/logo.svg' %}" alt="logo">
         <nav>
             <ul class="nav_links">
                 <li><a href="#">Home</a></li>

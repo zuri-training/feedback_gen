@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,9 +9,11 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="images/icon-logo.PNG"
+			href="{% static 'core/icon-logo.png' %}"
 		/>
-		<link rel="stylesheet" href="static/style.css" />
+		
+
+<link rel="stylesheet" href="{% static 'core/style.css' %}">
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
@@ -24,7 +27,7 @@
 	<body>
 		<header>
 			<nav>
-				<img class="logo" src="images/logo.png" />
+				<img class="logo" src="{% static 'core/logo.png' %}"/>
 				<div class="links">
 					<a href="#" target="_blank">Home</a>
 					<a href="#" target="_blank">Features</a>
@@ -177,7 +180,7 @@
 				<h1>Our Success stories</h1>
 				<div class="card">
 					<div class="card-1">
-						<img src="images/Airbnb.jpg" class="company-logo" />
+						<img src="{% static 'core/Airbnb.jpg' %}" class="company-logo" />
 						<p>“the best feedback generation form by far. second to none”</p>
 						<img src="images/Ellipse 5.png" class="avi" />
 						<p>Esther Howard</p>
