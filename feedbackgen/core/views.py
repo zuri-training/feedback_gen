@@ -17,7 +17,7 @@ def feedback_form(request):
         if form.is_valid():
             note = 'Success'
             form.save()
-            return render(request, 'templates/feedback.html', {'form':form, 'note':note})
+            return render(request, 'core/createform.html', {'form':form, 'note':note})
     else:
         form = FeedbackForm()
     return render(request, 'core/createform.html', {'form': form})
@@ -67,6 +67,7 @@ def signup_view(request):
 def faq(request):
     return render(request, "core/faq.html")
 
+@login_required
 def pricing(request):
     return render(request, "core/pricing.html")
 
@@ -76,6 +77,8 @@ def index(request):
 def dashboard(request):
     return render(request, 'core/template.html')
     
+def preview(request):
+    return render(request, "core/preview.html")
 
 @login_required
 def dashboard_view(request):
