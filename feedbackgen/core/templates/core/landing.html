@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,9 +8,9 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="images/landing-images/icon-logo.PNG"
+			href="/static/core/icon-logo.PNG"
 		/>
-		<link rel="stylesheet" href="{% static 'core/landing.css' %}" />
+		<link rel="stylesheet" href="/static/core/landing.css" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
@@ -25,17 +24,17 @@
 	<body>
 		<header>
 			<nav>
-				<img class="logo" src="images/landing-images/logo.png" />
+				<img class="logo" src="/static/core/logo.png" />
 				<div class="links">
 					<a href="#" target="_blank">Home</a>
 					<a href="#" target="_blank">Features</a>
-					<a href="#" target="_blank">Templates</a>
-					<a href="#" target="_blank">Pricing</a>
-					<a href="#" target="_blank">FAQ</a>
+					<a href="/templates/core/template.html" target="_blank">Templates</a>
+					<a href="/templates/core/pricing.html" target="_blank">Pricing</a>
+					<a href="/templates/core/faq.html" target="_blank">FAQ</a>
 				</div>
 				<div class="btn-links">
-					<button class="sign-in">Sign in</button>
-					<button class="sign-up">Sign Up</button>
+					<a href="/templates/core/signin.html"><button class="sign-in">Sign in</button></a>
+					<a href="/templates/core/signup.html"><button class="sign-up">Sign Up</button></a>
 				</div>
 			</nav>
 		</header>
@@ -48,7 +47,7 @@
 						Create forms, customise to fit your brand, share ore embed them. We
 						do the heavy lifting for you while you focus on your buisness
 					</p>
-					<button class="free-signup">Sign up for free</button>
+					<a href="/templates/core/signup.html"><button class="free-signup">Sign up for free</button></a>
 				</div>
 				<div class="small-samples">
 					<div class="register">
@@ -178,15 +177,15 @@
 				<h1>Our Success stories</h1>
 				<div class="card">
 					<div class="card-1">
-						<img src="images/landing-images/Airbnb.jpg" class="company-logo" />
+						<img src="/static/core/Airbnb.jpg" class="company-logo" />
 						<p>“the best feedback generation form by far. second to none”</p>
-						<img src="images/landing-images/Ellipse 5.png" class="avi" />
+						<img src="/static/core/Ellipse 5.png" class="avi" />
 						<p>Esther Howard</p>
 						<p>brand manager</p>
 					</div>
 					<div class="card-2">
 						<img
-							src="images/landing-images/Big_Fish.png"
+							src="/static/core/Big_Fish.png"
 							class="company-logo"
 						/>
 						<p>
@@ -194,13 +193,13 @@
 							they feel about our services. and with the embedding of form,
 							customers never have to leave our company’s website”
 						</p>
-						<img src="images/landing-images/Ellipse 6.png" class="avi" />
+						<img src="/static/core/Ellipse 6.png" class="avi" />
 						<p>Brooklyn Simmons</p>
 					</div>
 					<div class="card-3">
-						<img src="images/landing-images/beazer.png" class="company-logo" />
+						<img src="/static/core/beazer.png" class="company-logo" />
 						<p>“Best platform for all your form needs”</p>
-						<img src="images/landing-images/Ellipse 3.png" class="avi" />
+						<img src="/static/core/Ellipse 3.png" class="avi" />
 						<p>Guy Hawkins</p>
 						<p>brand manager</p>
 					</div>
@@ -211,7 +210,7 @@
 		<section id="millions-submitted">
 			<article>
 				<p>Millions of forms submitted</p>
-				<button>Sign up</button>
+				<a href="/templates/core/signup.html"><button>Sign up</button></a>
 			</article>
 		</section>
 
@@ -244,7 +243,7 @@
 		<footer>
 			<div class="last-div">
 				<div class="column">
-					<img src="images/landing-images/logo.png" class="bottom-icon" />
+					<img src="/static/core/logo.png" class="bottom-icon" />
 					<p>Create your embedded feedback forms</p>
 					<p>
 						<i class="fab fa-facebook"></i>

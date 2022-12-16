@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
   }
+  .page{
+    height: 100%;
+  }
   
   nav{
     display: flex;
@@ -282,3 +285,27 @@ nav ul li button{
         margin-left: -10%;
       }
   }
+footer {
+  margin-top: 20px;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #242f9b;
+	color: white;
+}
+footer .last-div {
+	width: 1216px;
+	display: flex;
+	justify-content:space-evenly;
+  background-color: #242f9b;
+  align-items: flex-start;
+}
+footer .bottom-icon {
+	width: 100px;
+}
+footer .column {
+	width: 160px;
+  background-color: #242F98;
+}

@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/faq.css">
+    <link rel="stylesheet" href="/static/core/faq.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.2.1/css/all.css">
+
     <title>FAQ</title>
 </head>
 <body>
  
     <nav>
-        <a href=""><img src="logo.svg" ></a>
+        <a href="/templates/core/landing.html"><img src="/static/core/logo.svg" ></a>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Templates</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Sign In</a></li>
-            <li><button class="signup">Sign Up</button></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="/templates/core/template.html">Templates</a></li>
+            <li><a href="/templates/core/pricing.html">Pricing</a></li>
+            <li><a href="/templates/core/faq.html">FAQ</a></li>
+            <li><a href="/templates/core/signin.html">Sign In</a></li>
+            <li><a href="/templates/core/signup.html"><button class="signup">Sign Up</button></li></a> 
 
         </ul>
     </nav>
@@ -111,7 +113,35 @@
     </div>
 
     <footer>
-        "//create a footer using htm "
+        <div class="last-div">
+            <div class="column">
+                <img src="/static/core/logo.png" class="bottom-icon" />
+                <p>Create your embedded feedback forms</p>
+                <p>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </p>
+            </div>
+            <div class="column">
+                <p>Homepage</p>
+                <p>Features</p>
+                <p>Use Cases</p>
+                <p>Integartion</p>
+                <p>Pricing</p>
+            </div>
+            <div class="column">
+                <p>Contact</p>
+                <p>Social Media</p>
+                <p>Terms & Condition</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="column">
+                <p>Documentation</p>
+                <p>FAQ</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
