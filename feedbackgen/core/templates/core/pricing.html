@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
     <!-- Using fonts awesome -->
     <script src="https://kit.fontawesome.com/098387041e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'core/pricing.css' %}">
+    <link rel="stylesheet" href="/static/core/pricing.css">
 
     <title>Pricing Page</title>
 </head>
@@ -19,20 +19,20 @@
 <body>
     <header>
 <!-- THE NAVIGATION -->
-        <img class="logo" src="{% static 'core/logo.svg' %}" alt="logo">
+        <img class="logo" src="/static/core/logo.png" alt="logo">
         <nav>
             <ul class="nav_links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Templates</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="/templates/core/template.html">Templates</a></li>
+                <li><a href="/templates/core/pricing.html">Pricing</a></li>
+                <li><a href="/templates/core/faq.html">FAQ</a></li>
                 
             </ul>
         </nav>
         <ul>
-            <li class="in"><a href="#">Sign In</a></li>
-            <a class="cta" href="#"><button>Sign Up</button></a>
+            <li class="in"><a href="/templates/core/signin.html">Sign In</a></li>
+            <a class="cta" href="/templates/core/signup.html"><button>Sign Up</button></a>
         </ul>
     </header>
 
@@ -321,7 +321,7 @@
     <footer class="footer">
         <div class="last-div">
             <div class="column">
-                <img src="images/logo.svg" class="bottom-icon" />
+                <img src="/static/core/logo.png" class="bottom-icon" />
                 <p>Create your embedded feedback forms</p>
                 <p>
                     <i class="fab fa-facebook"></i>
