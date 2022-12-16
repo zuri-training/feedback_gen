@@ -73,6 +73,10 @@ def pricing(request):
 def index(request):
     return render(request, "core/index.html")
 
+def dashboard(request):
+    return render(request, 'core/template.html')
+    
+
 @login_required
 def dashboard_view(request):
     content = render_to_string('createform.html', context=None)
