@@ -10,6 +10,7 @@ display: inline-flex;
 margin: 15px;
 font-size: 15px;
 }
+
 .newuser ul a li{
 background-color: #20227e;
 border-radius: 15px;
@@ -18,6 +19,7 @@ padding: 15px;
 width: 120px;
 justify-content: center;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 6.5fr;

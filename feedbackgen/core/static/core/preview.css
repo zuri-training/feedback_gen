@@ -23,6 +23,11 @@ header{
     
 }
 
+.arrow a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
 .arrow{
     width: 93px;
     color: white;
