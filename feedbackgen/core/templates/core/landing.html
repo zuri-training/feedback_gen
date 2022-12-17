@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,7 +11,7 @@
 			sizes="32x32"
 			href="images/landing-images/icon-logo.PNG"
 		/>
-		<link rel="stylesheet" href="static/landing.css" />
+		<link rel="stylesheet" href=" {% static 'core/landing.css' %}" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
@@ -22,6 +23,7 @@
 	</head>
 
 	<body>
+		
 		<header>
 			<nav>
 				<img class="logo" src="images/landing-images/logo.png" />
@@ -270,5 +272,12 @@
 				</div>
 			</div>
 		</footer>
+
+		
+
+    <a href="/signup"><button type="submit">Sign Up</button></a>
+    <a href="/signin"><button type="submit">Sign In</button></a>
+
+	
 	</body>
 </html>

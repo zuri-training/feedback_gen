@@ -48,9 +48,11 @@ label{
   font-size: 15px;
   font-weight: 500;
 }
-input[type=text], input[type=password]{
+
+
+input[type=text], input[type=password] , input[type=email]{
     width: 100%;
-    margin: 20px 0;
+    margin: 15px 0;
     height: 6vh;
     font-size: 15px;
     border-radius: 10px ;
@@ -90,10 +92,10 @@ button:hover {
     padding: 50px 50px;
     border: 1px solid #c9c7c7;
     border-radius: 10px;
-    height: 65vh;
+    height: 90vh;
     width: 25vw;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 65%;
     transform: translate(-50%, -50%);
     margin-top: 20px;

@@ -14,7 +14,11 @@ from pathlib import Path
 import os 
 import environ
 
-# Initialise environment variables
+import environ
+
+
+
+# # Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
 
@@ -131,3 +135,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+APPEND_SLASH=False
